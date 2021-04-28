@@ -8,7 +8,7 @@ http {
 
     server {
         server_name proxy.local;
-        listen 8080;
+        listen 8080 reuseport;
 
         location / {
             proxy_pass http://echo;
@@ -30,7 +30,7 @@ http {
 
     server {
         server_name proxy.local;
-        listen 8080;
+        listen 8080 reuseport;
 
         location / {
             mirror /mirror;
