@@ -1,0 +1,6 @@
+rootProject.name = 'hello-nginx'
+
+include "http"
+include 'tcpserver'
+include 'tcpclient'
+
