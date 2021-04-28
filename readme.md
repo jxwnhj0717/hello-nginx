@@ -16,8 +16,8 @@
 说明：
 
 1. 多个Worker进程。
+2. 共享内存。
 2. 模块化扩展。
-
 
 
 模块化：
@@ -71,3 +71,12 @@
 
 * [OpenResty动态更新](https://developer.aliyun.com/article/745757)
 
+# OpenResty
+
+使用OpenResty可以实现upstream的动态更新，不需要重启Nginx工作进程（nginx -s reload）。
+
+## 模块lua-nginx-module
+
+1. [入门视频](https://github.com/openresty/lua-nginx-module#videos)
+2. [用法提要](https://github.com/openresty/lua-nginx-module#synopsis)
+3. [指令和Lua Ngx API](https://openresty-reference.readthedocs.io/en/latest/Directives/)
